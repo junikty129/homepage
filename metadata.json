@@ -1,0 +1,6 @@
+{
+  "name": "에이치에스아이 (HSI) - 자동차 내장재 부품 전문기업",
+  "description": "자동차 인테리어 부품, NVH 흡음/차음 소재, Head-Lining Module 전문 제조기업 에이치에스아이 공식 홈페이지",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Blue 3D Gradients for Heads & Body -->
+    <radialGradient id="leftHeadGrad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#0242C5" />
+      <stop offset="100%" stop-color="#012275" />
+    </radialGradient>
+
+    <radialGradient id="rightHeadGrad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#0242C5" />
+      <stop offset="100%" stop-color="#012275" />
+    </radialGradient>
+
+    <linearGradient id="bodyBlueGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#1D62F0" />
+      <stop offset="40%" stop-color="#033CB8" />
+      <stop offset="100%" stop-color="#011B63" />
+    </linearGradient>
+
+    <!-- Vibrant Green 3D Metallic Ring Gradient -->
+    <linearGradient id="greenSwooshFront" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D9E00" />
+      <stop offset="30%" stop-color="#22E000" />
+      <stop offset="70%" stop-color="#4BFF12" />
+      <stop offset="100%" stop-color="#18B800" />
+    </linearGradient>
+
+    <linearGradient id="greenSwooshBack" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14A800" />
+      <stop offset="50%" stop-color="#36F008" />
+      <stop offset="100%" stop-color="#1FA800" />
+    </linearGradient>
+
+    <!-- Subtle Soft Shadow for Depth -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <!-- 1. BACK PORTION OF GREEN SWOOSH (Passes behind right upper body to top-right tip) -->
+    <path d="M 395 105 C 440 82 500 58 584 48 C 550 55 460 80 408 116 Z" fill="url(#greenSwooshBack)" />
+
+    <!-- 2. BLUE 'H' SHAPE (Left Body, Right Body, Bridge, Left Head, Right Head) -->
+    <!-- Left Body Pillar -->
+    <path d="M 210 110 C 185 130 172 175 174 240 C 176 300 190 350 220 375 C 236 388 250 370 242 350 C 228 315 218 260 216 210 C 215 175 220 135 235 112 Z" fill="url(#bodyBlueGrad)" />
+
+    <!-- Right Body Pillar -->
+    <path d="M 370 98 C 352 118 344 150 348 200 C 352 260 356 310 348 355 C 344 378 360 388 372 375 C 390 355 408 280 412 210 C 416 150 402 112 388 98 Z" fill="url(#bodyBlueGrad)" />
+
+    <!-- Connecting Bridge (Slanted upward from left to right) -->
+    <path d="M 222 238 C 265 218 310 196 352 180 C 356 162 348 152 344 165 C 302 180 258 202 218 222 C 214 235 220 242 222 238 Z" fill="url(#bodyBlueGrad)" />
+
+    <!-- Left Head Circle -->
+    <circle cx="206" cy="78" r="34" fill="url(#leftHeadGrad)" />
+
+    <!-- Right Head Circle -->
+    <circle cx="376" cy="62" r="35" fill="url(#rightHeadGrad)" />
+
+    <!-- 3. FRONT PORTION OF GREEN SWOOSH (Swoops in front of the lower blue legs) -->
+    <path d="M 166 142 C 102 185 20 230 24 268 C 28 300 95 292 185 260 C 310 216 480 148 584 48 C 500 95 315 175 180 222 C 100 250 48 266 44 246 C 40 222 108 185 166 142 Z" fill="url(#greenSwooshFront)" />
+  </g>
+</svg>
